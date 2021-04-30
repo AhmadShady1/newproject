@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <body>
+            <div class="w-75 py-5 m-auto">
+            
+                <div class="form-group">
+                        <label for="productName">productName</label>
+                    <input class="form-control" type="text" id="productName">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">productPrice</label>
+                <input class="form-control" type="number" id="productPrice">
+            </div>
+            <div class="form-group">
+                <label for="productCatgory">productCatgory</label>
+            <input class="form-control" type="text" id="productCatgory">
+        </div>
+        <div class="form-group">
+            <label for="productDesc">productDesc</label>
+        <textarea class="form-control" type="text"  id="productDesc"></textarea>
+    </div>
+    <button onclick="addProduct()" class="btn btn-outline-info">Add product</button>
+                
+            
+        </div>
+        <div class="w-75 py-3 m-auto">
+            <input type="text" placeholder="search...." id="search" class="form-control w-75 m-auto">
+            <table class="table my-5">
+                <thead>
+                    <th>index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Catgory</th>
+                    <th>Desc</th>
+                    <th>update</th>
+                    <th>delet</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>sony</td>
+                        <td>8000</td>
+                        <td>mobile</td>
+                        <td>good</td>
+                        <td><button class="btn btn-outline-info btn-warning">update</button></td>
+                        <td><button class="btn btn-outline-info btn-danger">delet</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+            <script src="jquery/jquery-3.5.1.slim.min.js"></script>
+        <script src="popper/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+         <script src="styile.js"></script>
+        </body>
+    </head>
+</html>
